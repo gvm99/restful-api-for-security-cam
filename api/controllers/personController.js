@@ -1,6 +1,6 @@
 'use strict';
 var mongoose = require('mongoose'),
-Message = mongoose.model('Person');
+Person = mongoose.model('Person');
 
 exports.list_all_persons = function(req, res) {
     Person.find({}, function(err, person) {

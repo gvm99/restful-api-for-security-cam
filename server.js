@@ -7,7 +7,7 @@ Message = require('./api/models/personModel'),
 bodyParser = require('body-parser');
 
 mongoose.Promise = global.Promise;
-// mongoose.connect('mongodb://localhost/msgdb');
+mongoose.connect('mongodb://localhost/security-cam-db');
 mongoose.useNewUrlParser = true;
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
